@@ -21,4 +21,4 @@ In src/main/docker/postgres there is a Dockerfile to run a postgres database. Yo
 docker run -e POSTGRES_PASSWORD=mysecretpassword -v <path to postgres data folder>:/var/lib/postgresql/data -p 5432:5432 postgres
 ```
 
-To
+To configure the database in the application go to `src/main/resources/application.properties`

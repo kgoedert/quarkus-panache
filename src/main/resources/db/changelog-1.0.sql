@@ -8,6 +8,13 @@ create table movie (
     genre varchar(50) not null
 );
 
+create table address(
+    id serial primary key,
+    city varchar(255) not null,
+    state varchar(255) not null,
+    country varchar(255) not null
+);
+
 create table actor(
     id serial primary key,
     name varchar(255) not null,
@@ -21,12 +28,6 @@ create table movie_actor(
     actor_id integer not null references actor(id)
 );
 
-create table address(
-    id serial primary key,
-    city varchar(255) not null,
-    state varchar(255) not null,
-    country varchar(255) not null
-);
 
 create table budget(
     id serial primary key,

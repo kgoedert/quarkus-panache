@@ -1,0 +1,2 @@
+- test mariadb
+- which is the default for ids in panache and postgres

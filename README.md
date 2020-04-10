@@ -1,6 +1,6 @@
 # What
 
-Very simple crud application using [quarkus](www.quarkus.io) to manage movies and their marketing campaigns.
+Very simple crud application using [quarkus](www.quarkus.io) to manage movies and their actors contact information
 
 # Why
 

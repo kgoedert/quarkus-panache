@@ -67,6 +67,10 @@
       <artifactId>quarkus-hibernate-orm-panache</artifactId>
       <version>1.3.0.Alpha2</version>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

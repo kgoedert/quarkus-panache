@@ -2,14 +2,18 @@ package com.github.kgoedert.quarkus.panache.actor;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+
+import com.github.kgoedert.quarkus.panache.actor.address.Address;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
@@ -32,6 +36,9 @@ public class Actor extends PanacheEntityBase{
 
     @Column(name="age")
     private int age;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
 
     public int getAge() {
         return age;

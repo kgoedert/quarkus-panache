@@ -22,3 +22,9 @@ docker run -e POSTGRES_PASSWORD=mysecretpassword -v <path to postgres data folde
 ```
 
 To configure the database in the application go to `src/main/resources/application.properties`
+
+# Run quarkus in dev mode
+
+```
+./mvnw compile quarkus:dev
+```

@@ -28,21 +28,10 @@ create sequence actor_id_seq increment 1 start 1 MINVALUE 1;
 
 
 create table movie_actor(
-    id integer primary key,
     movie_id integer not null references movie(id),
-    actor_id integer not null references actor(id)
+    actor_id integer not null references actor(id),
+    primary key(movie_id, actor_id)
 );
 create sequence movie_actor_id_seq;
 
-
-
-create table budget(
-    id integer primary key,
-    movie_id integer not null references movie(id),
-    description varchar(255),
-    begin_date date,
-    end_date date,
-    budget numeric not null
-);
-create sequence budget_id_seq;
 

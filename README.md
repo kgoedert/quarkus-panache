@@ -28,3 +28,5 @@ To configure the database in the application go to `src/main/resources/applicati
 ```
 ./mvnw compile quarkus:dev
 ```
+
+The post related to this code can be found [here](https://dev.to/kgoedert/getting-started-with-quarkus-and-panache-5b5b)
